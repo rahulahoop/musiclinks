@@ -1,0 +1,22 @@
+{
+  "name": "musiclinks",
+  "version": "1.0.0",
+  "description": "A music link in, the same record on every streaming service out",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": ["index.js", "index.d.ts", "src"],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": "github:rahulahoop/musiclinks"
+}
