@@ -1,6 +1,6 @@
 {
   "name": "musiclinks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A music link in, the same record on every streaming service out",
   "type": "module",
   "main": "index.js",

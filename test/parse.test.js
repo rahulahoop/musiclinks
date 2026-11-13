@@ -139,6 +139,7 @@ test('JSON-LD with several artists (TIDAL) names them, not the site', () => {
 test('pickCover hotlinks a sensible size', () => {
   assert.equal(pickCover(['https://is1-ssl.mzstatic.com/image/thumb/a/b.jpg/3000x3000bb.jpg']), 'https://is1-ssl.mzstatic.com/image/thumb/a/b.jpg/600x600bb.jpg')
   assert.equal(pickCover(['https://f4.bcbits.com/img/a123_0.jpg']), 'https://f4.bcbits.com/img/a123_16.jpg')
+  assert.equal(pickCover(['https://i1.sndcdn.com/artworks-abc-0-t1240x1240.jpg']), 'https://i1.sndcdn.com/artworks-abc-0-t500x500.jpg')
   assert.equal(pickCover(['http://insecure/x.jpg', 'https://i.scdn.co/image/x']), 'https://i.scdn.co/image/x')
   assert.equal(pickCover([]), null)
 })
